@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+  <meta charset="utf-8">
+      <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+
+  <!-- Mobile viewport optimized: h5bp.com/viewport -->
+  <meta name="viewport" content="width=device-width">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+  <!-- All JavaScript at the bottom, except this Modernizr build.
+       Modernizr enables HTML5 elements & feature detects for optimal performance.
+       Create your own custom Modernizr build: www.modernizr.com/download/ -->
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <header>
+        <nav class="nav">
+    <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+		    <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a>
+			<ul>
+				<li><a href="#secondPage">Our Pledge</a></li>
+				<li><a href="#secondPage/1">Our Mission</a></li>
+				<li><a href="#secondPage/2">Our Company</a></li>
+                <li><a href="#secondPage/3">Our History</a></li>
+			</ul>
+		    </li>
+         <li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
+         <li data-menuanchor="4thPage"><a href="#4thPage">Projects</a></li>
+         <li data-menuanchor="5thPage"><a href="#5thPage">News</a></li>
+         <li data-menuanchor="6thPage"><a href="#6thPage">Contact Us</a></li>
+         <li data-menuanchor="lastPage"><a href="#lastPage">Careers</a></li>
+    </ul>
+</nav>
+        </header>
+    
+    <div id="fullpage">
+    <div class="section" id="section0"><img alt="solarimg" src="img/IMG_0396.jpg" class="bkimg" />
+        <div class="cselogo">
+        <img alt="logo" src="img/csewhite.png" class="logo" />
+        </div>
+        <div id="textslider">
+            <ul>
+	            <li>
+	                <div class="textslider-container">
+                    <h4>Slider 1</h4>
+		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+	                </div>
+	            </li>
+		        <li>
+		            <div class="textslider-container">
+                    <h4>Slider 2</h4>
+		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+	            </div>
+	            </li>
+		           <li>
+		        <div class="textslider-container">
+                <h4>Slider 3</h4>
+		        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+	            </div>
+	            </li>
+		        <li>
+		        <div class="textslider-container">
+                <h4>Slider 4</h4>
+		        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+	            </div>
+	            <li>
+            </ul>
+        </div>
+    </div>
+    <div class="section" id="section1"><img alt="solarimg" src="img/solar.jpg" class="bkimg" />
+        <div class="slide"><h1> Our Pledge </h1> </div>
+        <div class="slide"> <h1>Our Mission </h1></div>
+        <div class="slide"> <h1>Our Company </h1> </div>
+        <div class="slide"> <h1>Our History </h1> </div>
+    </div>
+    <div class="section" id="section2"><img alt="solarimg" src="img/20150617_075654-768x432.jpg" class="bkimg" /></div>
+    <div class="section" id="section3"><img alt="solarimg" src="img/r15-768x574.jpg" class="bkimg" /></div>
+    <div class="section" id="section4"><img alt="solarimg" src="img/t2-768x384.jpg" class="bkimg" /></div>
+</div>
+  <footer>
+
+  </footer>
+
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts -->
+
+  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+       mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+</body>
+</html>
