@@ -42,8 +42,8 @@ body { margin: 0; font-size: 1em; line-height: 1.4; }
  * Also: hot pink! (or customize the background color to match your design)
  */
 
-::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
-::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::-moz-selection { background: transparent; color: #fff; text-shadow: none; }
+::selection { background: transparent; color: #fff; text-shadow: none; }
 
 
 /* =============================================================================
@@ -219,6 +219,15 @@ td { vertical-align: top; }
    ========================================================================== */
 
 /*====HEADER AND NAV====*/
+#wrapper {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+header .active {
+    background: #ff8355;
+}
 header {
     position: fixed;
     z-index: 1;
@@ -254,11 +263,12 @@ header li a:visited{
     color: #000
 }
 
+
 .nav ul {
     *zoom:1;
     list-style:none;
     margin:0;
-    padding:0;
+    padding:6px;
     background:white;
     z-index: 2;
     overflow: visible;
@@ -276,18 +286,18 @@ header li a:visited{
     float:left;
     position:relative;
     z-index: 2;
+    padding-top: .5%;
 
 }
 .nav a {
     display:block;
     padding:10px 20px;
-    line-height:1.2em;
     color:#000;
     z-index: 2;
+    padding-top: 7%;
 }
 .nav a:hover {
     text-decoration:none;
-    background:#FF4500;
     z-index: 2;
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
@@ -295,6 +305,18 @@ header li a:visited{
     -o-transition: all .25s ease;
     transition: all .25s ease;
 }
+
+.nav li:hover{
+     background:#FF4500;
+     text-decoration:none;
+     z-index: 2;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
 .nav li ul {
     background:white;
     z-index: 2;
@@ -316,16 +338,12 @@ header li a:visited{
     -o-transition: all .25s ease;
     transition: all .25s ease;
 }
+
+
 .nav li ul {
     position:absolute;
     left:0;
-    top:36px;
-    z-index:1;
-}
-.nav li ul {
-    position:absolute;
-    left:0;
-    top:36px;
+    top:42px;
     z-index:1;
     visibility:hidden;
     opacity:0;
@@ -343,6 +361,21 @@ header li a:visited{
     z-index: 2;
 }
 
+.nav ul li ul li a {
+    text-align: left;
+}
+
+
+.socmenu {
+    float: left;
+    font-size: 120%;
+}
+
+.socmenu .fa {
+    color: #FF4500;
+    font-size: x-large;
+}
+
 /*===BODY GENERAL===*/
 
 .bkimg {
@@ -355,22 +388,11 @@ header li a:visited{
 .slide {
     position: relative;
     top: -37%;
-}
-
-
-/*===SLIDER ONE===*/
-.cselogo {
-    position: relative;
-    top: 0%;
-    left: 2%;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
-    animation: fadein 2s;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .slide h1{
+    top: 27%;
     color: white;
     font-size: 50px;
     position: relative;
@@ -378,6 +400,21 @@ header li a:visited{
     font-family: 'Work Sans', sans-serif;
     text-transform: uppercase;
 }
+
+
+/*===SECTION ONE===*/
+.cselogo {
+    position: relative;
+    top: 0%;
+    left: 4%;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+
 
 .logo {
     width: 30%;
@@ -402,7 +439,7 @@ header li a:visited{
 	margin: auto;
 	overflow: hidden;
 	padding: 5px 0px 42px 5px;
-    height: 200px;
+    height: 145px;
 	border: 1px solid rgba(0, 0, 0, 0.15);
 	margin-top: 50px;
 	border-radius: 10px;
@@ -411,7 +448,7 @@ header li a:visited{
 	width: 600px;
     background: white;
     left: 25%;
-    bottom: 17%;
+    bottom: 50%;
 }
 
 #textslider li
@@ -435,7 +472,8 @@ header li a:visited{
 	-o-transition: left .3s linear;
 	-webkit-transition: left .3s linear;
 	margin-left: -25px;
-  font-family: century gothic;
+  font-family: 'Work Sans', sans-serif;
+  font-size: small;
   color: #666;
 }
 
@@ -459,7 +497,6 @@ header li a:visited{
 .textslider-container  p
 {
 	margin: 10px 25px;
-	font-weight: semi-bold;
 	line-height: 150%;
 	text-align: justify;
 }
@@ -496,6 +533,62 @@ header li a:visited{
 	-webkit-animation-play-state: paused;
 }
 
+input.button {
+    background-color: coral;
+}
+
+/*===SECTION TWO===*/
+
+.textbox {
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    border-radius: 1%;
+    text-align: center;
+    position: relative;
+    top: 30%;
+    width: 75%;
+    margin: auto;
+
+    font-family: 'Work Sans', sans-serif;
+}
+
+.textbox h2 {
+   margin-top: -5%;
+}
+
+.textbox h4{
+    padding: 0% 8%;
+}
+
+#pledge {
+      padding: 7% 0%; 
+}
+
+#mission {
+      padding: 2% 0%;  
+}
+
+#company {
+        padding: 1% 0%;
+}
+
+#history {
+        padding: 2% 0%;
+}
+
+/*===SECTION THREE===*/
+
+.titlefix {
+    position: relative;
+    color: white;
+    font-family: 'Work Sans', sans-serif; 
+    font-size: xx-large;
+}
+
+.fadeInBlock {
+    opacity: 0;
+}
+
 
 
 
@@ -525,6 +618,39 @@ header li a:visited{
     to   { opacity: 1; }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 
 
 

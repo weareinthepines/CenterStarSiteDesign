@@ -6,9 +6,12 @@
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+          
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.fullPage.js"></script>
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.fullPage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/elastislide.css" /> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
   <meta charset="utf-8">
       <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
@@ -37,37 +40,47 @@
        chromium.org/developers/how-tos/chrome-frame-getting-started -->
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
     <header>
-        <nav class="nav">
-    <ul id="menu">
-            <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-		    <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a>
-			<ul>
-				<li><a href="#secondPage">Our Pledge</a></li>
-				<li><a href="#secondPage/1">Our Mission</a></li>
-				<li><a href="#secondPage/2">Our Company</a></li>
-                <li><a href="#secondPage/3">Our History</a></li>
-			</ul>
-		    </li>
-         <li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
-         <li data-menuanchor="4thPage"><a href="#4thPage">Projects</a></li>
-         <li data-menuanchor="5thPage"><a href="#5thPage">News</a></li>
-         <li data-menuanchor="6thPage"><a href="#6thPage">Contact Us</a></li>
-         <li data-menuanchor="lastPage"><a href="#lastPage">Careers</a></li>
-    </ul>
-</nav>
-        </header>
+        <nav class="socialnav">
+                <ul class="socmenu">
+                    <li><a href="https://www.facebook.com/centerstarenergy"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/centerstarenergy"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/CenterStarUSA"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/centerstar-energy"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCqZeySvrlPTEOibtZzPl9lQ"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+        </nav>
+        <nav class="nav">         
+            <ul id="menu">
+                <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+		        <li data-menuanchor="secondPage"><a href="#secondPage">About Us</a>
+			        <ul>
+				        <li><a href="#secondPage">Our Pledge</a></li>
+				        <li><a href="#secondPage/1">Our Mission</a></li>
+				        <li><a href="#secondPage/2">Our Company</a></li>
+                        <li><a href="#secondPage/3">Our History</a></li>
+			        </ul>
+		        </li>
+                <li data-menuanchor="3rdPage"><a href="#3rdPage">Services</a></li>
+                <li data-menuanchor="4thPage"><a href="#4thPage">Projects</a></li>
+                <li data-menuanchor="5thPage"><a href="#5thPage">News</a></li>
+                <li data-menuanchor="6thPage"><a href="#6thPage">Contact Us</a></li>
+                <li data-menuanchor="lastPage"><a href="#lastPage">Careers</a></li>
+            </ul>          
+        </nav>
+    </header>
     
     <div id="fullpage">
-    <div class="section" id="section0"><img alt="solarimg" src="img/IMG_0396.jpg" class="bkimg" />
+    <div class="section" id="section0"><img alt="solarimg" src="images/IMG_0396.jpg" class="bkimg" />
         <div class="cselogo">
-        <img alt="logo" src="img/csewhite.png" class="logo" />
+        <img alt="logo" src="images/csewhite.png" class="logo" />
         </div>
         <div id="textslider">
             <ul>
 	            <li>
 	                <div class="textslider-container">
-                    <h4>Slider 1</h4>
-		            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                    <h4>Industry Leaders in Solar Renewable Energy Launch CenterStar Energy</h4>
+		            <p>VOORHEES, N.J., April 25, 2016 /PRNewswire/ -- Experienced solar renewable energy group launches CenterStar Energy Services LLC, filling a critical need for one of the world's fastest growing industries.<a href="http://www.prnewswire.com/news-releases/industry-leaders-in-solar-renewable-energy-launch-centerstar-energy-300256984.html?tc=eml_cleartime">  ...read more</a>
+                    </p>
 	                </div>
 	            </li>
 		        <li>
@@ -90,17 +103,94 @@
 	            <li>
             </ul>
         </div>
+        <!-- Begin MailChimp Signup Form -->
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+	    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 500px; position: absolute; bottom: 7%; left: 3%; }
+	        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        </style>
+        <div id="mc_embed_signup">
+        <form action="//centerstarenergy.us13.list-manage.com/subscribe/post?u=23469e1745ea89559ff6e55a4&amp;id=1affc5021c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+           <div id="mc_embed_signup_scroll">
+	    <label for="mce-EMAIL">Subscribe to our weekly mailing list</label>
+	    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -500px;" aria-hidden="true"><input type="text" name="b_23469e1745ea89559ff6e55a4_1affc5021c" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </div>
+        </form>
+        </div>
+        <!--End mc_embed_signup-->
     </div>
-    <div class="section" id="section1"><img alt="solarimg" src="img/solar.jpg" class="bkimg" />
-        <div class="slide"><h1> Our Pledge </h1> </div>
-        <div class="slide"> <h1>Our Mission </h1></div>
-        <div class="slide"> <h1>Our Company </h1> </div>
-        <div class="slide"> <h1>Our History </h1> </div>
+    <div class="section" id="section1"><img alt="solarimg" src="images/solar.jpg" class="bkimg" />
+        <div class="slide">            
+            <h1> Our Pledge </h1>
+            <div class="textbox" id="pledge">
+            <h2>Unmatched Engineering, Procurement, Construction & Maintenance Services</h2>
+            <h4>“To provide unmatched Engineering, Procurement, Construction and Maintenance Services; setting the Standard of Excellence for the Renewable Energy Industry one successful project at a time…”</br></br>
+                The WHY …”Our Team exists for the sole purpose of making our world more environmentally friendly planet through every renewable energy project that we deploy…”</h4>
+            </div>
+        </div>
+        <div class="slide"> 
+            <h1>Our Mission </h1>
+            <div class="textbox" id="mission">
+                <h4>“Our core values of Honesty and Integrity will be demonstrated each and every single day in our dealings with our clients, vendors and co-workers.  With forward thinking leadership, we continually strive to maximize growth opportunities and profitability for the mutual benefit of our industry partners, employees and investors.”
+                </br></br>“We lead by developing and building innovative, profitable renewable energy solutions to benefit our customers, our communities and our world. We are excited about bringing CenterStar Energy to the next level and continuing to exceed our customers’ expectations with the high level of support we are committed to delivering.”
+                    -Sean S. Angelini, President/Chief Operating Officer</h4>
+            </div>
+        </div>
+        <div class="slide" > 
+            <h1>Our Company </h1>
+            <div class="textbox" id="company"><h5>
+                By leveraging assets and relationships, we are uniquely able to provide construction services virtually anywhere. Our ability to source resources and equipment directly reduces costs and streamlines the process, while our expert design teams are uniquely qualified to overcome any challenge to meet the client’s expectations. We provide the technical guidance and resources to control expenses. With all trades orchestrated under one management team, ensuring compliance with environmental concerns, manufacturer warranties and industry standards.
+                </br></br>
+                The industry’s demand for alternative energy sources has increased year after year. Environmentally intelligent and highly efficient options are of vital necessity to energy professionals, owners and operators. Long-term solutions, reliable energy supply and dependable service are essential to success.
+                </br></br>
+                CenterStar Energy LLC., is a master solar integrator, with the expertise, knowledge, assets and resources to manage every aspect of design, build, installation including ongoing operations and maintenance. CenterStar delivers innovative solutions, expert service and advanced systems, designed to maximize return on investment. The company has national capabilities with the ability to execute projects of any size, in any region.
+                </br></br>
+                CenterStar Energy was devised from the idea to deliver complete renewable energy resources to customers. One successful project at a time in order to make the world a better and more green planet. The new corporate brand was born from the model of the Sun serving as the one true energy source to sustain all life. CenterStar was formed to address increasing demand for alternative energy and to support ever evolving industry requirements. We have the technical proficiency to effectively implement all our customers’ needs, to achieve energy efficiency objectives and the resources to support operations for the life of your energy system.
+                </br></br>
+                “CenterStar Energy is continually looking to build and expand our service reach and overall industry brand awareness. As the Sun is at the Center of our Universe, it is the one and only true power source creating everything from organic life, our food sources, fossil fuels, renewable energy, to affecting our climate and everything else around us… If it wasn’t for the sun, life on Earth would cease to exist as we know it.”
+                -Sean S. Angelini, President/Chief Operating Officer
+                </br></br>
+                CenterStar is currently comprised of a very seasoned management team that has collectively designed, built and installed hundreds of solar energy projects throughout North America. The company is lead by team of professionals known in the industry, for expert solar consulting and construction services. CenterStar is focused on providing unmatched services with expanded reach nationally to its clients.
+                </h5>
+            </div>
+        </div>
+        <div class="slide"> 
+            <h1>Our History </h1>
+            <div class="textbox" id="history"><h4>
+                CenterStar Energy is lead by solar renewable industry leaders including over 75 expert staff and field technicians exceeding 35 years industry experience. With hundreds of successful projects in place and installing well over 1.5 GW’s in solar power, our company provides a wide breadth of resources unsurpassed in the industry. We have partnered with respected solar energy and utility companies including Sun Edison, Washington Gas Energy Systems, SoCore Energy and others.
+                </br></br>
+                Today the company is privately held and holds all necessary licenses, insurance, bonding, credit and safety certifications required to facilitate all project requirements. CenterStar is structured as an open-shop/merit shop company. Although our primary goal is to operate and service our clients across the country including US territories as an open-shop company, in many jurisdictions we also provide prevailing wage, as well as union shop labor where needed.
+                We are currently an Army Corp. of Engineers approved installer, included on the GSA schedule and a
+                MATOC approved teaming contractor.
+                </h4>
+           </div>          
+        </div>
     </div>
-    <div class="section" id="section2"><img alt="solarimg" src="img/20150617_075654-768x432.jpg" class="bkimg" /></div>
-    <div class="section" id="section3"><img alt="solarimg" src="img/r15-768x574.jpg" class="bkimg" /></div>
-    <div class="section" id="section4"><img alt="solarimg" src="img/t2-768x384.jpg" class="bkimg" /></div>
-</div>
+    <div class="section" id="section2"><img alt="solarimg" src="images/20150617_075654-768x432.jpg" class="bkimg" />
+    </div> 
+    <div class="section" id="section3 menu"><img alt="solarimg" src="images/r15-768x574.jpg" class="bkimg" />
+        <h2 class="titlefix fadeInBlock">OUR WORK SPEAKS FOR ITSELF </h2>
+            <ul id="carousel" class="elastislide-list">
+	    <li><a href="mtc-logistics-pennoni.html"><img src="images/Maryland/MTC Logistics - Pennoni/1.jpg" alt="image01" /></a></li>
+	    <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/4.jpg" alt="image02" /></a></li>
+	    <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/3.jpg" alt="image03" /></a></li>
+        <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/4.jpg" alt="image04" /></a></li>
+        <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/1.jpg" alt="image05" /></a></li>
+        <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/4.jpg" alt="image02" /></a></li>
+	    <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/3.jpg" alt="image03" /></a></li>
+        <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/4.jpg" alt="image04" /></a></li>
+        <li><a href="#"><img src="images/Maryland/MTC Logistics - Pennoni/1.jpg" alt="image05" /></a></li>
+
+    </ul>
+    </div>
+    <div class="section" id="section4"><img alt="solarimg" src="images/t2-768x384.jpg" class="bkimg" /></div>
+        </div>
+    <script type="text/javascript" src="js/libs/elastislide.js"></script>
+    <script type="text/javascript" src="js/libs/jquery.smoothState.min.js"></script>
   <footer>
 
   </footer>
@@ -125,5 +215,6 @@
     g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
     s.parentNode.insertBefore(g,s)}(document,'script'));
   </script>
+ </div>
 </body>
 </html>
